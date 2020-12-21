@@ -1,0 +1,230 @@
+/* =============================
+
+    GENERAL STYLES
+
+=============================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+h1,h2,h3,h4
+p,
+img {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+
+body {
+  background: url('assets/background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+
+
+.colors-pack,
+.info,
+.preview {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+
+
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+
+
+/* =============================
+
+    COLORS-SECTION STYLES
+
+=============================*/
+
+.colors-section h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.box img {
+  height: 7.5rem;
+  border-radius: 100%;
+}
+
+.box h3 {
+  font-weight: 700;
+}
+
+.box div {
+  font-family: 'Muli', sans-serif;
+}
+
+.box::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+.box img:hover {-webkit-transform: scale(3);}
+
+/* =============================
+
+        INFO-SECTION STYLES
+
+=============================*/
+
+.info {
+  width: 100vw;
+  text-align: center;
+  background: hsla(100,0%,0%,.7);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+.info h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+}
+
+.info p {
+  margin: 1rem;
+}
+
+/* =============================
+
+        PREVIEW-SECTION STYLES
+
+=============================*/
+
+.preview h4 {
+  background-color: rgba(104, 113, 113, 0.5);
+}
+
+.preview img {
+  height: 20rem;
+  border-radius: 3%;
+}
+
+.preview p:last-child {
+  margin-bottom: 0;
+}
+.preview img:hover {-webkit-transform: scale(2);}
+
+
+
+/* =============================
+
+        TABLET AND DESKTOP STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+/* COLORS-SECTION-STYLE */
+
+.box {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+.box::after {
+    display: none;
+  }
+
+
+/* INFO-SECTION-STYLE */
+
+.info-wrapper {
+    width: 60vw;
+    margin: 0 auto;
+  }
+  
+  
+/* PREVIEW-SECTION-STYLE */
+
+.preview-wrapper {
+    width: 60vw;
+    margin: 0 auto;
+  }
